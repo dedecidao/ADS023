@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <!--IONIC-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+  </head>
+
+  <body>
+    <ion-app>
+      <ion-content class="ion-padding">
+        <ion-center>
+          <ion-grid class="ion-justify-content-start">
+            <ion-row class="ion-align-self-start">
+              <div id="cabecalho-login">
+                <h1>Aluno Online</h1>
+              </div>
+            </ion-row>
+
+            <ion-row>
+              <!-- <img src="images/logo_vermelha.png" /> -->
+              <ion-img
+                position="floating"
+                width="180"
+                height="180"
+                class="ion-padding"
+                src="images/logo_vermelha.png"
+              ></ion-img>
+            </ion-row>
+
+            <ion-item>
+              <ion-label position="floating">Matricula</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating">Senha:</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+            <br />
+
+            <ion-button href="/login"
+              >Entrar</ion-button
+            >
+          </ion-grid>
+        </ion-center>
+      </ion-content>
+    </ion-app>
+  </body>
+</html>

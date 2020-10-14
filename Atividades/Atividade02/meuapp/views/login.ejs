@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+    <ion-app>
+        <ion-tabs>
+            <ion-tab tab="home">
+              <div>
+                <h1 class="ion-padding">Bem vindo Aluno,</h1>
+                <h2 class="ion-padding"> Para solicitar menção de notas selecione a aba Notas</h2>
+                <ion-list>
+                  <ion-list-header>
+                    Aulas de Hoje:
+                  </ion-list-header>
+                  <ion-item>
+                    <ion-label>Programação para Dispositivos Moveis</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Gerenciamento de TI</ion-label>
+                  </ion-item>
+          
+             
+                </ion-list>
+          
+                
+
+              </div>
+            </ion-tab>
+            <ion-tab tab="notas">
+                
+                <ion-list>
+                    <ion-list-header>
+                      Notas do Semestre:
+                    </ion-list-header>
+                    <ion-item>
+                      <ion-label>Programação para Dispositivos Moveis</ion-label>
+                      <ion-note slot="end" color="success">99</ion-note>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-label>Gerenciamento de Projetos</ion-label>
+                      <ion-note slot="end" color="success">85</ion-note>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-label>Governança de TI</ion-label>
+                      <ion-note slot="end" color="warning">55</ion-note>
+                    </ion-item>
+            
+                    <ion-item>
+                      <ion-label>Programação Orientada a Objetos</ion-label>
+                      <ion-note slot="end" color="danger">40</ion-note>
+                    </ion-item>
+                    <!--FIM DAS NOTAS-->
+
+                    <br>
+                    <br>
+                      <ion-list lines="full" class="ion-no-margin">
+                        <ion-list-header lines="full">
+                          <ion-label <ion-icon name="color-fill"></ion-icon>>
+                            Requerimento de menção de nota:
+                          </ion-label>
+                        </ion-list-header>
+
+
+                        <ion-item>
+                          <ion-label position="floating">Nome da Disciplina:</ion-label>
+                          <ion-input></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label position="floating">Prova</ion-label>
+                          <ion-input placeholder="P1, P2, P3"></ion-input>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label position="stacked">Observações:</ion-label>
+                          <ion-textarea placeholder="Motivo do requerimento" ></ion-textarea>
+                        </ion-item>
+
+
+
+
+                        
+                              <div  id="cool-button-div">
+                              <ion-button class="button button-block button-calm">Enviar</ion-button>
+                              </div>
+                   
+
+
+
+                      </ion-list>
+
+                  </ion-list>
+            </ion-tab>
+
+            <ion-tab tab="faltas">
+         
+ 
+                <ion-list>
+                  <ion-header>
+                    Frequencia
+                  </ion-header>
+                  <ion-item>
+                    <ion-label>Programação para Dispositivos Moveis - 100%</ion-label>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Gerenciamento de TI --- 95 %</ion-label>
+                  </ion-item>
+                </ion-list>
+            </ion-tab>
+
+
+            <ion-tab tab="boletos">
+              <ion-toolbar>
+                <h1>Boletos</h1>
+          
+                  <ion-buttons slot="secondary">
+                
+                  </ion-buttons>
+           
+                  <ion-buttons slot="primary">
+                    <ion-button color="secondary">
+                      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+                    </ion-button>
+                  </ion-buttons>
+
+                  
+                </ion-toolbar>
+
+                
+            </ion-tab>
+            
+            <ion-tab tab="settings">
+
+            <ion-list>
+              <ion-radio-group value="biff">
+                <ion-list-header>
+                  <ion-label>Taxa de atualização</ion-label>
+                </ion-list-header>
+            
+                <ion-item>
+                  <ion-label>45Hz</ion-label>
+                  <ion-radio slot="start" value="biff"></ion-radio>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-label>50hz</ion-label>
+                  <ion-radio slot="start" value="griff"></ion-radio>
+                </ion-item>
+            
+                <ion-item>
+                  <ion-label>60hz</ion-label>
+                  <ion-radio slot="start" value="buford"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
+            </ion-list>
+            </ion-tab>
+            
+            <!-- BARRA DE SELEÇÃO DO RODAPE E ICONES DO IONIC -->
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="home">
+                    <ion-label>Inicio</ion-label>
+                    <ion-icon name="home"></ion-icon>
+                </ion-tab-button>
+                 
+                <ion-tab-button tab="notas">
+                    <ion-label>Notas</ion-label>
+                    <ion-icon name="documents-outline"></ion-icon>
+                </ion-tab-button>
+
+                <ion-tab-button tab="faltas">
+                    <ion-label>Faltas</ion-label>
+                    <ion-icon name="person-remove-outline"></ion-icon>
+                </ion-tab-button>
+
+                <ion-tab-button tab="boletos">
+                    <ion-label>Boletos</ion-label>
+                    <ion-icon name="cash-outline"></ion-icon>
+                </ion-tab-button>
+
+                <ion-tab-button tab="settings">
+                    <ion-label>Configurações</ion-label>
+                    <ion-icon name="settings"></ion-icon>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+    </ion-app>
+</body>
+
+</html>

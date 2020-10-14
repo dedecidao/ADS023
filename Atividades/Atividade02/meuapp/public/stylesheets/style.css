@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+#topo{
+  color:white;
+  float: left;
+  position: absolute;
+  background-color: red;
+  margin-top: auto;
+
+}
+
+#cabecalho-login{
+  color:white;
+  background-color: red;
+  margin-top: 20;
+
+}
+
+
